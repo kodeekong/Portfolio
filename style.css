@@ -152,19 +152,12 @@ button{
 .project1{
     margin: 20px;
     border: 30px;
-    margin-top: 217px;
-    margin-left: 100px;
     max-width: 500px;
     max-height: 400px;
-    float: left;
     border: 2px solid #4d4855;
 }
-
-.p{
-    float: left;
-}
 .pp{
-    float: right;
+text-align: center;
 }
 
 @media screen and (max-width: 1075px) {
