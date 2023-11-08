@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+<table class="calculator">
+    <tr>
+        
+            <div class="box">
+                <h3 id = "output">0</h3>
+            </div>
+
+        <button onclick="equationClear()">C</button> <button onclick="equationAdd('%')">%</button> <button class="btnBack" onclick="equationremove()">Back</button><br>
+        <tr>
+            <button onclick="equationAdd(1)">1</button>
+            <button onclick="equationAdd(2)">2</button>
+            <button onclick="equationAdd(3)">3</button>
+            <button onclick="equationAdd('/')">/</button><br>
+        </tr>
+        <tr>
+            <button onclick="equationAdd(4)">4</button>
+            <button onclick="equationAdd(5)">5</button>
+            <button onclick="equationAdd(6)">6</button>
+            <button onclick="equationAdd('*')">*</button><br>
+        </tr>
+
+        <tr>
+            <button onclick="equationAdd(7)">7</button>
+            <button onclick="equationAdd(8)">8</button>
+            <button onclick="equationAdd(9)">9</button>
+            <button onclick="equationAdd('-')">-</button><br>
+        </tr>
+
+<button class="btnPN" onclick="equationAdd('_')">+/-</button>
+<button onclick="equationAdd(0)">0</button>
+<button onclick="equationAdd('.')">.</button>
+<button onclick="equationAdd('+')">+</button><br>
+
+<button class="btnEql" onclick="startEquation()">=</button>
+<ul id = "listy"></ul>
+</tr>
+
+</body>
+<script src="calculator.js"></script>
+<link rel="stylesheet" href="calculator.css">
+</html>
