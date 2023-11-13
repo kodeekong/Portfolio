@@ -4,60 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Personal Portfolio</title>
+    <title>Tic-Tac-Toe</title>
 </head>
 <body>
-    <div class="container" id="mains">
-        <div class="glass-container1">
-            <nav class="navbar"> 
-                <ul class="nav-links">
-                    <li class="nav-link"><a href=#main>Projects</a></li>
-                    <li class="nav-link"><a href="https://github.com/kodeekong">Github</a></li>
-                </ul>
-            </nav>
-<div class="content">
-    <div class="main">
-        <h2>Hey! I'm Kodee </h2>
-        <p>Hello World! I am an aspiring software engineer! <br> Click below to view my projects. </p>
-        <div class="indicator">
-           <button class="span-btn"> 
-            <a href="#main">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            </a>
-            </button>
+
+<div class="container">
+    
+    <div>
+        <h1>Tic-Tac-Toe</h1>
+        <div class="scoreboard">
+            <h4 class="p1" id="playerx">Player X Score: 0</h4>
+            <h4 class="p2" id="playero">Player O Score: 0</h4>
         </div>
     </div>
-    <div class="image-wrapper">
-        <img src="./images/unnamed.jpg" alt="">
-    </div>
+
 </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="glass-container">
-            <nav class="navbar">
-                <ul class="nav-links">
-                    <li class="nav-link1"><a href=#mains>Home</a></li>
-                    <li class="nav-link1"><a href="https://github.com/kodeekong">Github</a></li>
-                </ul>
-            </nav>
-<div class="content">
-    <div class="main" id="main">
-    </div>
-    <div class="project-wrapper">
-       <a href="Calculator/index.html">
-        <img class="project1" src="./images/Screenshot.png">
-       <p class="pp">Calculator App</p>
-       <a href="Tic-Tac-Toe-main/index.html">
-        <img class="project1" src="./images/Screenshot (9).png">
-       <p class="pp">Tic-Tac-Toe</p>
-       </a>
-    </div>
-</div>
-        </div>
-    </div>
+
+
+<div class="board">
+    <button tag="empty" id="elem1" class="cell" onclick="turn('elem1')"></button>
+    <button tag="empty" id="elem2" class="cell" onclick="turn('elem2')"></button>
+    <button tag="empty" id="elem3" class="cell" onclick="turn('elem3')"></button>
+    <button tag="empty" id="elem4" class="cell" onclick="turn('elem4')"></button>
+    <button tag="empty" id="elem5" class="cell" onclick="turn('elem5')"></button>
+    <button tag="empty" id="elem6" class="cell" onclick="turn('elem6')"></button>
+    <button tag="empty" id="elem7" class="cell" onclick="turn('elem7')"></button>
+    <button tag="empty" id="elem8" class="cell" onclick="turn('elem8')"></button>
+    <button tag="empty" id="elem9" class="cell" onclick="turn('elem9')"></button>
+</div>  
+
+<button class="restartButton" onclick="reset(false)">Reset Board</button>  
+<button class="restartButton" onclick="reset(true)">Reset All</button>  
+
 </body>
+<script src="index.js"></script>
 </html>
